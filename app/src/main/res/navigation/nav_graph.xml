@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/HomeFragment"
-        android:name="com.example.capstoneproject.HomeFragment"
+        android:name="com.example.festifan.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/ChecklistOverviewFragment"
-        android:name="com.example.capstoneproject.ChecklistOverviewFragment"
+        android:name="com.example.festifan.ChecklistOverviewFragment"
         android:label="ChecklistOverviewFragment"
         tools:layout="@layout/fragment_checklist_overview">
     </fragment>

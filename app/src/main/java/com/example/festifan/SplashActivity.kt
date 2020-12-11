@@ -1,4 +1,4 @@
-package com.example.capstoneproject
+package com.example.festifan
 
 import android.content.Intent
 import android.os.Bundle

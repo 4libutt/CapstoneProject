@@ -1,4 +1,4 @@
-package com.example.capstoneproject
+package com.example.festifan
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

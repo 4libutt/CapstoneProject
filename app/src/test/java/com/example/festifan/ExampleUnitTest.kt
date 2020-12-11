@@ -1,4 +1,4 @@
-package com.example.capstoneproject
+package com.example.festifan
 
 import org.junit.Test
 

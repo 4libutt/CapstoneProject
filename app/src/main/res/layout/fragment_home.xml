@@ -4,4 +4,159 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment"/>
+    android:background="@drawable/background"
+    tools:context=".HomeFragment">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="4dp"
+            android:src="@drawable/logo_widget" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/frame" />
+
+    </FrameLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mapBtn"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="68dp"
+        android:src="@drawable/logo_widget"
+        android:text="Map"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:backgroundTint="@color/festivan_color"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/stripe_color"
+        app:strokeWidth="4dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:src="@drawable/logo_widget"
+        android:text="Check list"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:backgroundTint="@color/festivan_color"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mapBtn"
+        app:layout_constraintEnd_toStartOf="@+id/mapBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mapBtn"
+        app:strokeColor="@color/stripe_color"
+        app:strokeWidth="4dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:src="@drawable/logo_widget"
+        android:text="Entry ticket"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:backgroundTint="@color/festivan_color"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mapBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mapBtn"
+        app:layout_constraintTop_toTopOf="@+id/mapBtn"
+        app:strokeColor="@color/stripe_color"
+        app:strokeWidth="4dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:src="@drawable/logo_widget"
+        android:text="Payment overview"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:backgroundTint="@color/festivan_color"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        app:strokeColor="@color/stripe_color"
+        app:strokeWidth="4dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:src="@drawable/logo_widget"
+        android:text="Stage list"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:backgroundTint="@color/festivan_color"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        app:strokeColor="@color/stripe_color"
+        app:strokeWidth="4dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton2"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/logo_widget"
+        android:text="Weather"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:backgroundTint="@color/festivan_color"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:strokeColor="@color/stripe_color"
+        app:strokeWidth="4dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:src="@drawable/logo_widget"
+        android:text="Friends"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:backgroundTint="@color/festivan_color"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialButton2"
+        app:layout_constraintEnd_toStartOf="@+id/materialButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/materialButton2"
+        app:strokeColor="@color/stripe_color"
+        app:strokeWidth="4dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:src="@drawable/logo_widget"
+        android:text="My planning"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:backgroundTint="@color/festivan_color"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/materialButton2"
+        app:layout_constraintTop_toTopOf="@+id/materialButton2"
+        app:strokeColor="@color/stripe_color"
+        app:strokeWidth="4dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
