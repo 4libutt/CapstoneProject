@@ -20,12 +20,14 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:padding="4dp"
-            android:src="@drawable/logo_widget" />
+            android:src="@drawable/logo_widget"
+            android:contentDescription="@string/logo" />
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/frame" />
+            android:src="@drawable/frame"
+            android:contentDescription="@string/logo_radius" />
 
     </FrameLayout>
 
@@ -35,7 +37,7 @@
         android:layout_height="110dp"
         android:layout_marginBottom="68dp"
         android:src="@drawable/logo_widget"
-        android:text="Map"
+        android:text="@string/map"
         android:textAllCaps="false"
         android:textSize="18sp"
         app:backgroundTint="@color/festivan_color"
@@ -50,7 +52,7 @@
         android:layout_width="100dp"
         android:layout_height="110dp"
         android:src="@drawable/logo_widget"
-        android:text="Check list"
+        android:text="@string/check_list"
         android:textAllCaps="false"
         android:textSize="18sp"
         app:backgroundTint="@color/festivan_color"
@@ -66,7 +68,7 @@
         android:layout_width="100dp"
         android:layout_height="110dp"
         android:src="@drawable/logo_widget"
-        android:text="Entry ticket"
+        android:text="@string/entry_ticket"
         android:textAllCaps="false"
         android:textSize="18sp"
         app:backgroundTint="@color/festivan_color"
@@ -83,7 +85,7 @@
         android:layout_width="100dp"
         android:layout_height="110dp"
         android:src="@drawable/logo_widget"
-        android:text="Payment overview"
+        android:text="@string/payment_overview"
         android:textAllCaps="false"
         android:textSize="14sp"
         app:backgroundTint="@color/festivan_color"
@@ -99,7 +101,7 @@
         android:layout_width="100dp"
         android:layout_height="110dp"
         android:src="@drawable/logo_widget"
-        android:text="Stage list"
+        android:text="@string/stage_list"
         android:textAllCaps="false"
         android:textSize="18sp"
         app:backgroundTint="@color/festivan_color"
@@ -117,7 +119,7 @@
         android:layout_height="110dp"
         android:layout_marginTop="68dp"
         android:src="@drawable/logo_widget"
-        android:text="Weather"
+        android:text="@string/weather"
         android:textAllCaps="false"
         android:textSize="15sp"
         app:backgroundTint="@color/festivan_color"
@@ -132,7 +134,7 @@
         android:layout_width="100dp"
         android:layout_height="110dp"
         android:src="@drawable/logo_widget"
-        android:text="Friends"
+        android:text="@string/friends"
         android:textAllCaps="false"
         android:textSize="16sp"
         app:backgroundTint="@color/festivan_color"
@@ -148,7 +150,7 @@
         android:layout_width="100dp"
         android:layout_height="110dp"
         android:src="@drawable/logo_widget"
-        android:text="My planning"
+        android:text="@string/my_planning"
         android:textAllCaps="false"
         android:textSize="15sp"
         app:backgroundTint="@color/festivan_color"
