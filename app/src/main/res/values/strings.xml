@@ -12,4 +12,6 @@
     <string name="logo">logo</string>
     <string name="logo_radius">logo_radius</string>
     <string name="checklists">Checklist</string>
+    <string name="task_name">Task name</string>
+    <string name="important_task">Important task</string>
 </resources>

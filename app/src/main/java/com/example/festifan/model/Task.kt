@@ -9,7 +9,7 @@ import java.text.DateFormat
 
 @Entity(tableName = "checklist")
 @Parcelize
-data class Checklist(
+data class Task(
 
         @PrimaryKey(autoGenerate = true)
         @ColumnInfo(name = "id")
