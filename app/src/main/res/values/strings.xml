@@ -11,7 +11,14 @@
     <string name="my_planning">My planning</string>
     <string name="logo">logo</string>
     <string name="logo_radius">logo_radius</string>
-    <string name="checklists">Checklist</string>
+    <string name="checklists">Tasks</string>
     <string name="task_name">Task name</string>
     <string name="important_task">Important task</string>
+    <string name="removed_task">Removed task!</string>
+    <string name="undo">Undo</string>
+    <string name="delete_all_tasks">Delete all tasks?</string>
+    <string name="delete_button">Delete anyway</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="deletion_text">Are you sure you want to delete all the tasks? Once they are deleted the data will be lost forever!</string>
+    <string name="add_new_task">add new task</string>
 </resources>
