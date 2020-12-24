@@ -19,5 +19,22 @@
         android:name="com.example.festifan.ui.checklist.ChecklistFragment"
         android:label="ChecklistOverviewFragment"
         tools:layout="@layout/fragment_checklist_overview">
+        <action
+            android:id="@+id/action_ChecklistOverviewFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment" />
+        <action
+            android:id="@+id/action_ChecklistOverviewFragment_to_editTaskFragment"
+            app:destination="@id/editTaskFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.example.festifan.ui.checklist.AddTaskFragment"
+        android:label="fragment_add_edit_checklist"
+        tools:layout="@layout/fragment_add_checklist" >
+    </fragment>
+    <fragment
+        android:id="@+id/editTaskFragment"
+        android:name="com.example.festifan.ui.checklist.EditTaskFragment"
+        android:label="fragment_edit_task"
+        tools:layout="@layout/fragment_edit_task" />
 </navigation>
