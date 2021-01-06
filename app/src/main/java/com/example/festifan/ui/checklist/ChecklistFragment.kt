@@ -47,6 +47,7 @@ class ChecklistFragment : Fragment(), TaskAdapter.OnItemClickListener  {
         observeLiveData()
 
         addfab.setOnClickListener {
+            activity?.title = "Add task"
             findNavController().navigate(R.id.action_ChecklistOverviewFragment_to_addTaskFragment)
         }
     }
@@ -130,6 +131,7 @@ class ChecklistFragment : Fragment(), TaskAdapter.OnItemClickListener  {
     }
 
     override fun onItemClick(task: Task) {
+        activity?.title = "Edit task"
         setFragmentResult(REQ_TASK_KEY, bundleOf(Pair(BUNDLE_TASK_KEY, task)))
         findNavController().navigate(R.id.action_ChecklistOverviewFragment_to_editTaskFragment)
     }

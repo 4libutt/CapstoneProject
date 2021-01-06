@@ -1,5 +1,6 @@
 package com.example.festifan.ui.checklist
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -29,7 +30,6 @@ class EditTaskFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         observeFragmentResult()
-        activity?.title = "Edit task"
 
         fab_save_checklistItem.setOnClickListener {
             checkTask()
@@ -44,6 +44,7 @@ class EditTaskFragment : Fragment() {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private fun setElements(task: Task) {
         currentTask = task
         et_taskName.setText(task.name)

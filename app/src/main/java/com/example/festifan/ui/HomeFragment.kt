@@ -24,9 +24,15 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        activity?.title = "Home"
         checklist.setOnClickListener {
+            activity?.title = "Checklist"
             findNavController().navigate(R.id.action_HomeFragment_to_ChecklistOverviewFragment)
+        }
+
+        weather.setOnClickListener {
+            activity?.title = "Weather"
+            findNavController().navigate(R.id.action_HomeFragment_to_weatherFragment)
         }
     }
 }
