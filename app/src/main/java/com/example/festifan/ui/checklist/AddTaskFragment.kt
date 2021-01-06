@@ -27,21 +27,19 @@ class AddTaskFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        activity?.title = "Add task"
-
         fab_add_checklistItem.setOnClickListener {
-            addGame()
+            addTask()
             findNavController().popBackStack()
         }
     }
 
-    private fun addGame() {
+    private fun addTask() {
 
         val name = et_taskName.text.toString()
         val checked = checkbox_important.isChecked
 
         if (name.isEmpty()) {
-            Snackbar.make(requireView(), "Enter a title", Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(requireView(), "Enter a task name", Snackbar.LENGTH_SHORT).show()
             return
         }
         taskViewModel.addTask(Task(name = name, important = checked))
