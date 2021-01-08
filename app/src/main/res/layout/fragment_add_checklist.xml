@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/task_name"
             android:id="@+id/et_taskName"
-            android:inputType="text"/>
+            android:inputType="textCapSentences"/>
 
         <com.google.android.material.checkbox.MaterialCheckBox
             android:layout_width="match_parent"
