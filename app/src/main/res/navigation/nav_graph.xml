@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_HomeFragment_to_weatherFragment"
             app:destination="@id/weatherFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_mapOverviewFragment"
+            app:destination="@id/mapOverviewFragment" />
     </fragment>
     <fragment
         android:id="@+id/ChecklistOverviewFragment"
@@ -45,4 +48,16 @@
         android:name="com.example.festifan.ui.weather.WeatherFragment"
         android:label="fragment_weather"
         tools:layout="@layout/fragment_weather" />
+    <fragment
+        android:id="@+id/mapOverviewFragment"
+        android:name="com.example.festifan.ui.map.MapOverviewFragment"
+        android:label="MapOverviewFragment" >
+        <action
+            android:id="@+id/action_mapOverviewFragment_to_mapDisplayFragment"
+            app:destination="@id/mapDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapDisplayFragment"
+        android:name="com.example.festifan.ui.map.MapDisplayFragment"
+        android:label="MapDisplayFragment" />
 </navigation>

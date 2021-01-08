@@ -7,7 +7,8 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.example.festifan.R
 import com.example.festifan.model.Task
-import kotlinx.android.synthetic.main.fragment_checklist_item.view.*
+import kotlinx.android.synthetic.main.item_task.view.*
+
 
 class TaskAdapter(private val tasks: List<Task>, private val listener: OnItemClickListener) : RecyclerView.Adapter<TaskAdapter.ViewHolder>() {
 
@@ -46,7 +47,7 @@ class TaskAdapter(private val tasks: List<Task>, private val listener: OnItemCli
         viewType: Int
     ): ViewHolder {
         return ViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.fragment_checklist_item, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.item_task, parent, false)
         )
     }
 
