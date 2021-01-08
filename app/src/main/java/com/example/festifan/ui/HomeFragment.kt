@@ -34,5 +34,10 @@ class HomeFragment : Fragment() {
             activity?.title = "Weather"
             findNavController().navigate(R.id.action_HomeFragment_to_weatherFragment)
         }
+
+        mapBtn.setOnClickListener {
+            activity?.title = "Map overview"
+            findNavController().navigate(R.id.action_HomeFragment_to_mapOverviewFragment)
+        }
     }
 }
